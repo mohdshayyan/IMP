@@ -13,6 +13,8 @@ for i in range(1,11):
   s[s==30]=s+3
   print("New List is:")
   print(s[s>=33])
+
+
 ##########################################
 '''
 Create a dataframe using lists.                                                                                           1
@@ -40,6 +42,8 @@ print(books[books['Price']>250].to_string(header=False,index=False))
 #Answer 4
 books.plot(x='Subject',y='Price',kind='bar')
 mpp.show()
+
+
 ##########################################
 '''
 Create above table in MySQL.
@@ -64,6 +68,8 @@ select * from students order by name asc
 select class,max(marks) from students group by class
 select class,count(*) from students group by class having count(*)>2
 select distinct city from students;
+
+
 ##########################################
 '''
 Considering the above dataframe answer the following queries by writing appropriate command in python pandas.
@@ -92,6 +98,8 @@ plt.title("Report",color='Red')
 plt.xlabel("Customer Names",color='Blue')
 plt.ylabel("Bill Amount",color='Magenta')
 plt.show()
+
+
 ##########################################
 '''
 Create below table “staff” and insert all records.
@@ -108,6 +116,8 @@ select * from staff order by salary desc;
 select left(sname,3) from staff;
 select * from staff where year(now())-year(dojoin)=12;
 select power(length(sname),2) from staff;
+
+
 ##########################################
 '''
  Write a program in python to create the following
@@ -145,6 +155,8 @@ plt.ylabel("Population")
 plt.grid()
 plt.show()
 country.to_csv('country.csv')
+
+
 ##########################################
 '''
 Consider the table “Charity” and write SQL queries for the tasks that follow:
@@ -163,6 +175,8 @@ select * from charity where month(pdate)=11;
 select max(qty) from charity;
 select itemname, price, qty from charity order by price desc;
 select item_id,itemname, instr(itemname,'s') from charity;
+
+
 ##########################################                   Set 4
 '''
 Write a program in python to create the following dataframe named “employee” storing
@@ -197,6 +211,8 @@ plt.xlabel("Employee Names",color='red')
 plt.ylabel("Salary",color='magenta')
 plt.legend(['Salary'])
 plt.show()
+
+
 ##########################################
 '''
 Create the table “employee” and write sql queries for the following:
@@ -211,6 +227,8 @@ select mid(ename,2,3) from employee;
 select right(post,2) from employee;
 select lower(ename) from employee;
 select min(Dt_join) from employee;
+
+
 ##########################################    Set 5
 '''
 Write a Python code for following questions:
@@ -241,7 +259,9 @@ plt.title("Medicine Report",color='blue')
 plt.xlabel("Medicine Names",color='red')
 plt.ylabel("Price",color='magenta')
 plt.legend(['Price'])
-plt.show()
+plt.show
+
+
 ##########################################
 '''
 Observe the above medicine table and write queries for following:
@@ -257,24 +277,3 @@ select manufacturer,price from medicines order by price;
 select left(medicinename,4) from medines where medicineid like '%5';
 select upper(mdeicinename) from manufacturer;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
